@@ -4,14 +4,14 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_container_registry" "ACR" {
-  name                = "containerRegistry1gfdgdf"
+  name                = "containerRegistryde23"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   sku                 = "Standard"
 }
 
 resource "azurerm_kubernetes_cluster" "AKS" {
-  name                = "azurecluster234253"
+  name                = "azureclustercl45"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   dns_prefix          = "examplagsag123w"
