@@ -1,17 +1,17 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "acr-aksrg"
+  name     = "acr-aksrg2"
   location = "West Europe"
 }
 
 resource "azurerm_container_registry" "ACR" {
-  name                = "containerRegistryde28"
+  name                = "containerRegistryde281"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   sku                 = "Standard"
 }
 
 resource "azurerm_kubernetes_cluster" "AKS" {
-  name                = "azureclustercl48"
+  name                = "azureclustercl481"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   dns_prefix          = "examplagsag123w"
