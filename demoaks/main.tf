@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "acr-aksrg"
+  name     = "acr-aksrg1"
   location = "West Europe"
 }
 
